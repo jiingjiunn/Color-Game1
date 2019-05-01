@@ -1,0 +1,120 @@
+body{
+    text-transform: uppercase;
+    margin: 0px;
+    background: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 5px 0 10px 0;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 1px;
+}
+.container{
+    max-width: 600px ;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* STYLES FOR BANNER */
+#banner{
+    background:rgb(11, 82, 175) ;
+    color: white;
+
+}
+#banner .container{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+/* STYLES FOR NAVBAR */
+
+#navbar{
+    background: white;
+    color: rgb(11, 82, 175); 
+}
+#navbar .container{
+    flex-direction: column;
+    align-items: center;
+}
+#wrong{
+    visibility: hidden;
+    color: red;
+}
+#wrong.win{
+    visibility: hidden;
+    color: green;
+}
+
+.btn{
+    background-color: white; /* Green background */
+    border: 0px solid white;
+    color: rgb(11, 82, 175); /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+/* Add a background color on hover */
+div.btn:hover{
+    background-color: rgb(11, 82, 175);
+    color: white;
+}
+
+.btn-group .btn {
+    float: left; /* Float the .btns side by side */
+}
+
+.btn-group .btn:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+.btn.selected{
+    background-color: rgb(11, 82, 175);
+    color: white;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/* STYLES FOR GRID */
+#grid{
+    background: black;
+}
+#grid .container{
+    justify-content: center;
+    padding: 10px 0;
+}
+.colorbox{
+    width: 184px ;
+    height: 184px ;
+    background: rgb(28, 187, 126);
+    border-radius: 25px;
+    margin: 8px;
+}
+.colorbox:hover{
+    width: 178px;
+    height: 178px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+
+}
+
+@media screen and (min-width: 500px){
+    #navbar .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

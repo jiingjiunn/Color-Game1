@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Colour Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="color.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- question div -->
+        <section id="banner">
+            <div class="container">
+                <h3>the great</h3>
+                <h1>RGB(255, 255, 255)</h1>
+                <h3>guessing game</h3>
+            </div>
+        </section>
+
+        <!-- navbar -->
+        <section id = navbar>       
+            <div class="container">
+                <!-- reset game -->
+                <div id="init" class = "btn">new colors </div>
+                <!-- Status bar -->
+                <div id="wrong">try again</div>
+                <!-- difficulty, toggle -->
+                <div id="difficulty" class="btn-group">
+                    <div class ="btn">EASY</div>
+                    <div class ="btn selected">HARD</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- color grid -->
+        <section id = grid>
+            <div class="container">
+                    <div id = "0" class="colorbox"></div>
+                    <div id = "1" class="colorbox"></div>
+                    <div id = "2" class="colorbox"></div>
+                    <div id = "3" class="colorbox"></div>
+                    <div id = "4" class="colorbox"></div>
+                    <div id = "5" class="colorbox"></div>
+            </div>
+        </section>
+
+        
+        <script src="color.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" async defer></script>
+    </body>
+</html>
